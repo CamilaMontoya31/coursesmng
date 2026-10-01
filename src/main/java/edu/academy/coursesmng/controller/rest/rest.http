@@ -1,0 +1,26 @@
+@baseUrl = http://localhost:8084/coursemng
+
+### Search instructors by name or subject
+GET {{baseUrl}}/api/instructors
+Accept: application/json
+Content-Type: application/json
+
+### Search by id
+GET {{baseUrl}}/api/instructors/1
+Accept: application/json
+Content-Type: application/json
+
+### Create instructor
+POST {{baseUrl}}/api/instructors
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstName": "Fabian",
+  "lastName": "Hernandez",
+  "email": "a@a.com",
+  "instructorDetail": {
+    "youtubeChannel": "https://www.youtube.com/@soythaly",
+    "hobby": "chisme"
+  }
+}
